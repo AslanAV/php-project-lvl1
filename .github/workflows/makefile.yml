@@ -1,18 +1,8 @@
-name: Makefile CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+name: Make lint
+on: push
 jobs:
-  build:
-
+  my-job:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-      
-    - name: Make lint
-      run: make lint
+      - name: my-step
+        run: make lint
