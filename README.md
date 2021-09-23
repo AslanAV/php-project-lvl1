@@ -5,4 +5,4 @@
 ### Test Coverage Badge:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 ### GitHub actions:
-[![Build Status](https://travis-ci.com/username/projectname.svg?branch=master)](https://travis-ci.com/username/projectname)
+[![Build Status](https://travis-ci.com/AslanAV/php-project-lvl1.svg?branch=master)](https://travis-ci.com/AslanAV/php-project-lvl1)
