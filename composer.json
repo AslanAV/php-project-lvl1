@@ -14,6 +14,8 @@
             "email": "autlevaslan@gmail.com"
         }
     ],
+    "description": "AslanAV php-project-lvl1",
+    "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"
     }
@@ -23,6 +25,7 @@
         "squizlabs/php_codesniffer": "^3.5.5"
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ]
 }

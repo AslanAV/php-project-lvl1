@@ -9,3 +9,6 @@ validate:
 
 lint:
 	composer exec phpcs -- --standard=PSR12 src bin
+
+brain-even:
+	./bin/brain-even
