@@ -11,9 +11,10 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use Brain\Games\Cli;
+use Brain\Games\numberIsEven;
 
-echo ('Welcome to the Brain Games!');
-echo ("\n");
-Cli\welcome();
-
+numberIsEven\welcome();
+numberIsEven\isEven();
+numberIsEven\isEven();
+numberIsEven\isEven();
+numberIsEven\endGame();

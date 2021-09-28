@@ -49,7 +49,7 @@
                 }
             ],
             "description": "Console utilities for PHP",
-            "homepage": "https://github.com/wp-cli/php-cli-tools",
+            "homepage": "http://github.com/wp-cli/php-cli-tools",
             "keywords": [
                 "cli",
                 "console"
