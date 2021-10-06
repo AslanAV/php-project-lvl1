@@ -1,9 +1,6 @@
 install:
 	composer install
 
-brain-games:
-	./bin/brain-games
-
 validate:
 	composer validate
 
@@ -12,3 +9,9 @@ lint:
 
 brain-even:
 	./bin/brain-even
+
+brain-calc:
+	./bin/brain-calc
+
+brain-games:
+	./bin/brain-games
