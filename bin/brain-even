@@ -1,9 +1,6 @@
 #!/usr/bin/env php
 <?php
-
-// Путь который будет использован при глобальной установке пакета
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
-// Путь для локальной работы с проектом
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
 
 if (file_exists($autoloadPath1)) {
@@ -13,8 +10,4 @@ if (file_exists($autoloadPath1)) {
 }
 use Brain\Games\numberIsEven;
 
-numberIsEven\welcome();
 numberIsEven\isEven();
-numberIsEven\isEven();
-numberIsEven\isEven();
-numberIsEven\endGame();
