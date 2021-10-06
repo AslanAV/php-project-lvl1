@@ -8,7 +8,15 @@ function generate()
 {
     $question = rand(0, 100);
     $condition = $question % 2;
-    return [$question, !(bool)$condition];
+    switch (!(bool)$condition) {
+        case true:
+            $answer = 'yes';
+            break;
+        case false:
+            $answer = 'no';
+            break;
+    }
+    return [$question, !(bool)$condition, $answer];
 }
 
 function isEven()

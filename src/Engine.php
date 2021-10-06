@@ -21,14 +21,13 @@ function engineGame($gameData)
         } else {
             switch ($gameData[$i][1]) {
                 case true:
-                    line("'$answerUser' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, $name!");
+                    line("'$answerUser' is wrong answer ;(. Correct answer was '{$gameData[$i][2]}'.\nLet's try again, $name!");
                     exit;
                 case false:
-                    line("'$answerUser' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, $name!");
+                    line("'$answerUser' is wrong answer ;(. Correct answer was '{$gameData[$i][2]}'.\nLet's try again, $name!");
                     exit;
             }
         }
     }
     line("Congratulations, $name!");
-
 }
