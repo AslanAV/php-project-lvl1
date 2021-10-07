@@ -15,3 +15,6 @@ brain-calc:
 
 brain-games:
 	./bin/brain-games
+
+brain-gcd:
+	./bin/brain-gcd

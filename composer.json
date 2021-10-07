@@ -8,6 +8,7 @@
             "src/Games/Cli.php",
             "src/Games/numberIsEven.php",
             "src/Games/calcGame.php",
+            "src/Games/gcdGame.php",
             "src/Engine.php"
         ]
     },
@@ -31,6 +32,7 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ]
 }

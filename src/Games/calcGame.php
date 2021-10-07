@@ -2,7 +2,6 @@
 
 namespace Brain\Games\calcGame;
 
-use phpDocumentor\Reflection\Types\String_;
 use function Brain\Engine\engineGame;
 
 function calc()
@@ -16,6 +15,7 @@ function calc()
 
 function generateRound(int $rounds): array
 {
+    $gameData = [];
     for ($i = 1; $i <= $rounds; $i++) {
         $gameData[$i] = dataRounds();
     }
