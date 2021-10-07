@@ -2,39 +2,45 @@
 
 namespace Brain\Games\calcGame;
 
+use phpDocumentor\Reflection\Types\String_;
 use function Brain\Engine\engineGame;
 
-function generateSum()
+function calc()
 {
-    $num1 = rand(0, 100);
-    $num2 = rand(0, 100);
-    $arrOperation = ["+", "-", "*"];
-    $operation = $arrOperation[rand(0, 2)];
+    $rounds = 3;
+    $startMessage = 'What is the result of the expression?';
+    $gameData = generateRound($rounds);
+    $gameData = ['startMessage'=>$startMessage, 'countGame'=>$rounds] + $gameData;
+    engineGame($gameData);
+}
+
+function generateRound(int $rounds): array
+{
+    for ($i = 1; $i <= $rounds; $i++) {
+        $gameData[$i] = dataRounds();
+    }
+    return $gameData;
+}
+
+function dataRounds(): array
+{
+    $num1 = rand(0, 10);
+    $num2 = rand(0, 10);
+    $allOperation = ["+", "-", "*"];
+    $count = count($allOperation) - 1;
+    $operation = $allOperation[rand(0, $count)];
     $question = "$num1 $operation $num2";
+    $answer = 0;
     switch ($operation) {
         case '+':
             $answer = $num1 + $num2;
+            break;
         case '-':
             $answer = $num1 - $num2;
+            break;
         case '*':
             $answer = $num1 * $num2;
+            break;
     }
-}
-
-function generate()
-{
-    $question = rand(0, 100);
-    $condition = $question % 2;
-    return [$question, !(bool)$condition];
-}
-
-function isEven()
-{
-    $rounds = 3;
-    $startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
-    for ($i = 1; $i <= $rounds; $i++) {
-        $gameData[$i] = generate();
-    }
-    $gameData = ['startMessage'=>$startMessage, 'countGame'=>$rounds] + $gameData;
-    engineGame($gameData);
+    return ['question' => $question, 'answer' => (string)$answer];
 }
