@@ -8,3 +8,6 @@
 
 ### игра brain-calc
 [asciinema brain-calc](https://asciinema.org/a/NWb1FPoWIN7LBEFFHED185eij)
+
+### игра brain-gcd
+[asciinema brain-calc](https://asciinema.org/a/vlQa2bkyVXnnlaguC2CGaTti9)
