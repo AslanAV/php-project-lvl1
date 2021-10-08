@@ -11,3 +11,6 @@
 
 ### игра brain-gcd
 [asciinema brain-calc](https://asciinema.org/a/vlQa2bkyVXnnlaguC2CGaTti9)
+
+### игра brain-progression
+[asciinema brain-calc](https://asciinema.org/a/iKr8nY6V4sJVPc0mG5orcuKRB)
