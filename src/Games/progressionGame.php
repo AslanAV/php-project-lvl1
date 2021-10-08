@@ -9,7 +9,7 @@ function progression()
     $rounds = 3;
     $startMessage = 'Find the greatest common divisor of given numbers.';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage'=>$startMessage, 'countGame'=>$rounds] + $gameData;
+    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
     engineGame($gameData);
 }
 

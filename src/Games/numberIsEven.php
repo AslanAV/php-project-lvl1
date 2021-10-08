@@ -9,7 +9,7 @@ function isEven()
     $rounds = 3;
     $startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage'=>$startMessage, 'countGame'=>$rounds] + $gameData;
+    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
     engineGame($gameData);
 }
 

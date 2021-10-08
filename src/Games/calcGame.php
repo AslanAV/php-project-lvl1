@@ -9,7 +9,7 @@ function calc()
     $rounds = 3;
     $startMessage = 'What is the result of the expression?';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage'=>$startMessage, 'countGame'=>$rounds] + $gameData;
+    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
     engineGame($gameData);
 }
 
