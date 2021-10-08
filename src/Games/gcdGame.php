@@ -4,7 +4,7 @@ namespace Brain\Games\gcdGame;
 
 use function Brain\Engine\engineGame;
 
-function gcd()
+function gcd(): void
 {
     $rounds = 3;
     $startMessage = 'Find the greatest common divisor of given numbers.';
@@ -25,7 +25,7 @@ function generateRound(int $rounds): array
 function dataRounds(): array
 {
     $num1 = random_int(1, 10);
-    $num2 = rand(1, 10);
+    $num2 = random_int(1, 10);
     $question = "$num1 $num2";
     $largerNum = 0;
     $smallNum = 0;
@@ -41,7 +41,9 @@ function dataRounds(): array
             break;
     }
     for ($i = $smallNum; $i > 0; $i--) {
-        if (!($largerNum % $i || $smallNum % $i)) {
+        $firstCondition = (bool)($largerNum % $i);
+        $secondCondition = (bool)($smallNum % $i);
+        if (!($firstCondition || $secondCondition)) {
             $answer = $i;
             break;
         }

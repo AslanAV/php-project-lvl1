@@ -4,7 +4,7 @@ namespace Brain\Games\calcGame;
 
 use function Brain\Engine\engineGame;
 
-function calc()
+function calc(): void
 {
     $rounds = 3;
     $startMessage = 'What is the result of the expression?';

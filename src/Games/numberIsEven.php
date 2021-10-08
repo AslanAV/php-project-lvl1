@@ -4,7 +4,7 @@ namespace Brain\Games\numberIsEven;
 
 use function Brain\Engine\engineGame;
 
-function isEven()
+function isEven(): void
 {
     $rounds = 3;
     $startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -15,6 +15,7 @@ function isEven()
 
 function generateRound(int $rounds): array
 {
+    $gameData = array();
     for ($i = 1; $i <= $rounds; $i++) {
         $gameData[$i] = dataRounds();
     }
@@ -23,7 +24,8 @@ function generateRound(int $rounds): array
 
 function dataRounds(): array
 {
-    $question = rand(0, 100);
+    $question = random_int(0, 100);
+    $answer = '';
     $condition = !(bool)($question % 2);
     switch ($condition) {
         case true:

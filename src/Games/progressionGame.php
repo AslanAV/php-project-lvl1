@@ -4,7 +4,7 @@ namespace Brain\Games\progressionGame;
 
 use function Brain\Engine\engineGame;
 
-function progression()
+function progression(): void
 {
     $rounds = 3;
     $startMessage = 'Find the greatest common divisor of given numbers.';

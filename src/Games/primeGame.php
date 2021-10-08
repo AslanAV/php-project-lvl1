@@ -4,7 +4,7 @@ namespace Brain\Games\primeGame;
 
 use function Brain\Engine\engineGame;
 
-function prime()
+function prime(): void
 {
     $rounds = 3;
     $startMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';

@@ -5,7 +5,7 @@ namespace Brain\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function engineGame(array $gameData)
+function engineGame(array $gameData): void
 {
     line("Welcome to the Brain Game!");
     $name = prompt("May I have your name?");
@@ -15,7 +15,7 @@ function engineGame(array $gameData)
     line("Congratulations, $name!");
 }
 
-function rounds(array $gameData, string $name)
+function rounds(array $gameData, string $name): void
 {
     for ($i = 1; $i <= $gameData['countGame']; $i++) {
         line("Question: {$gameData[$i]['question']}");
@@ -24,7 +24,7 @@ function rounds(array $gameData, string $name)
     }
 }
 
-function reply(string $answerUser, int $i, array $gameData, string $name)
+function reply(string $answerUser, int $i, array $gameData, string $name): void
 {
     if ($answerUser === $gameData[$i]['answer']) {
         line("Correct!");
