@@ -27,6 +27,7 @@ function dataRounds(): array
     $start = random_int(1, 20);
     $step = random_int(1, 10);
     $len = random_int(5, 10);
+    $progression = [];
     for ($i = 1; $i <= $len; $i++) {
         $progression[] = $start;
         $start += $step;
