@@ -8,7 +8,6 @@ use function cli\prompt;
 function engineGame(array $gameData)
 {
     line("Welcome to the Brain Game!");
-//    $name = line("May I have your name?");
     $name = prompt("May I have your name?");
     line("Hello, %s!", $name);
     line($gameData['startMessage']);
@@ -20,7 +19,6 @@ function rounds(array $gameData, string $name)
 {
     for ($i = 1; $i <= $gameData['countGame']; $i++) {
         line("Question: {$gameData[$i]['question']}");
-//        $answerUser = "Your answer";
         $answerUser = prompt("Your answer");
         reply($answerUser, $i, $gameData, $name);
     }

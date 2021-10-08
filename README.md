@@ -14,3 +14,6 @@
 
 ### игра brain-progression
 [asciinema brain-calc](https://asciinema.org/a/iKr8nY6V4sJVPc0mG5orcuKRB)
+
+### игра brain-prime
+[asciinema brain-calc](https://asciinema.org/a/IxLjIQ7jBriiBRd4QpmyYyMRp)
