@@ -20,7 +20,7 @@ function rounds(array $gameData, string $name)
 {
     for ($i = 1; $i <= $gameData['countGame']; $i++) {
         line("Question: {$gameData[$i]['question']}");
-//        $answerUser = line("Your answer");
+//        $answerUser = "Your answer";
         $answerUser = prompt("Your answer");
         reply($answerUser, $i, $gameData, $name);
     }
