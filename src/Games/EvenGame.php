@@ -28,5 +28,5 @@ function generateQAPairs(): array
     $question = random_int(0, 100);
     $condition = !(bool)($question % 2);
     $answer = $condition ? 'yes' : 'no';
-    return [$question, (string)$answer];
+    return [$question, $answer];
 }

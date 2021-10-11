@@ -32,6 +32,6 @@ function generateQAPairs(): array
             $count++;
         }
     }
-    $answer = $count === 1 ? 'yes' : 'no';
+    $answer = ($count === 1) ? 'yes' : 'no';
     return [$question, $answer];
 }
