@@ -3,6 +3,7 @@
 namespace Brain\Games\progressionGame;
 
 use function Brain\Engine\engineGame;
+
 use const Brain\Engine\ROUNDS_COUNT;
 
 function progressionData(): void

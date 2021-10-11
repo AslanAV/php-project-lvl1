@@ -3,6 +3,7 @@
 namespace Brain\Games\GcdGame;
 
 use function Brain\Engine\engineGame;
+
 use const Brain\Engine\ROUNDS_COUNT;
 
 function gcdData(): void
