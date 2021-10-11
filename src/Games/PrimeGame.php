@@ -33,5 +33,5 @@ function generateQAPairs(): array
         }
     }
     $answer = $count === 1 ? 'yes' : 'no';
-    return ['question' => $question, 'answer' => $answer];
+    return [$question, $answer];
 }

@@ -38,5 +38,5 @@ function generateQAPairs(): array
     $answer = $progression[$hideNum];
     $progression[$hideNum] = '..';
     $question = implode(' ', $progression);
-    return ['question' => $question, 'answer' => (string)$answer];
+    return [$question, (string)$answer];
 }

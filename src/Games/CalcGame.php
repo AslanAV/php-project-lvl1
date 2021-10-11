@@ -46,5 +46,5 @@ function generateQAPairs(): array
         default:
             throw new Exception('Error');
     }
-    return ['question' => $question, 'answer' => (string)$answer];
+    return [$question, (string)$answer];
 }

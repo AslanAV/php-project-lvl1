@@ -28,7 +28,7 @@ function generateQAPairs(): array
     $num1 = random_int(1, 10);
     $num2 = random_int(1, 10);
     [$question, $answer] = largerNum($num1, $num2);
-    return ['question' => $question, 'answer' => $answer];
+    return [$question, $answer];
 }
 
 function largerNum(int $num1, int $num2): array
