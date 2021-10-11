@@ -25,5 +25,3 @@ function engineGame(array $gameData, string $startMessage): void
     }
     line("Congratulations, $name!");
 }
-
-

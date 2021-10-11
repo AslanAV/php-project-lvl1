@@ -5,7 +5,7 @@ namespace Brain\Games\PrimeGame;
 use function Brain\Engine\engineGame;
 use const Brain\Engine\ROUNDS_COUNT;
 
-function prime(): void
+function primeData(): void
 {
     $rounds = ROUNDS_COUNT;
     $startMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -17,12 +17,12 @@ function generateRound(int $rounds): array
 {
     $gameData = [];
     for ($i = 1; $i <= $rounds; $i++) {
-        $gameData[$i] = dataRounds();
+        $gameData[$i] = generateQAPairs();
     }
     return $gameData;
 }
 
-function dataRounds(): array
+function generateQAPairs(): array
 {
     $question = random_int(1, 50);
     $count = 0;

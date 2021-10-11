@@ -6,7 +6,7 @@
         },
         "files": [
           "src/Cli.php",
-            "src/Games/NumberEven.php",
+            "src/Games/EvenGame.php",
             "src/Games/CalcGame.php",
             "src/Games/GcdGame.php",
             "src/Games/ProgressionGame.php",

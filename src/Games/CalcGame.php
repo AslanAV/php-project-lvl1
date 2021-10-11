@@ -2,11 +2,11 @@
 
 namespace Brain\Games\CalcGame;
 
-use Safe\Exceptions\EioException;
+use Exception;
 use function Brain\Engine\engineGame;
 use const Brain\Engine\ROUNDS_COUNT;
 
-function calc(): void
+function calcData(): void
 {
     $rounds = ROUNDS_COUNT;
     $startMessage = 'What is the result of the expression?';
@@ -18,12 +18,12 @@ function generateRound(int $rounds): array
 {
     $gameData = [];
     for ($i = 1; $i <= $rounds; $i++) {
-        $gameData[$i] = dataRounds();
+        $gameData[$i] = generateQAPairs();
     }
     return $gameData;
 }
 
-function dataRounds(): array
+function generateQAPairs(): array
 {
     $num1 = random_int(0, 10);
     $num2 = random_int(0, 10);
@@ -31,7 +31,6 @@ function dataRounds(): array
     $count = count($allOperation) - 1;
     $operation = $allOperation[random_int(0, $count)];
     $question = "{$num1} {$operation} {$num2}";
-    $answer = 0;
     switch ($operation) {
         case '+':
             $answer = $num1 + $num2;

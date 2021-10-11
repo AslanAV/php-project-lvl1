@@ -5,7 +5,7 @@ namespace Brain\Games\GcdGame;
 use function Brain\Engine\engineGame;
 use const Brain\Engine\ROUNDS_COUNT;
 
-function gcd(): void
+function gcdData(): void
 {
     $rounds = ROUNDS_COUNT;
     $startMessage = 'Find the greatest common divisor of given numbers.';
@@ -17,12 +17,12 @@ function generateRound(int $rounds): array
 {
     $gameData = [];
     for ($i = 1; $i <= $rounds; $i++) {
-        $gameData[$i] = dataRounds();
+        $gameData[$i] = generateQAPairs();
     }
     return $gameData;
 }
 
-function dataRounds(): array
+function generateQAPairs(): array
 {
     $num1 = random_int(1, 10);
     $num2 = random_int(1, 10);
