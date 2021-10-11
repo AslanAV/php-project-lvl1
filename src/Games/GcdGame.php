@@ -1,16 +1,16 @@
 <?php
 
-namespace Brain\Games\gcdGame;
+namespace Brain\Games\GcdGame;
 
 use function Brain\Engine\engineGame;
+use const Brain\Engine\ROUNDS_COUNT;
 
 function gcd(): void
 {
-    $rounds = 3;
+    $rounds = ROUNDS_COUNT;
     $startMessage = 'Find the greatest common divisor of given numbers.';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
-    engineGame($gameData);
+    engineGame($gameData, $startMessage);
 }
 
 function generateRound(int $rounds): array
@@ -26,19 +26,20 @@ function dataRounds(): array
 {
     $num1 = random_int(1, 10);
     $num2 = random_int(1, 10);
+    [$question, $answer] = largerNum($num1, $num2);
+    return ['question' => $question, 'answer' => $answer];
+}
+
+function largerNum(int $num1, int $num2): array
+{
     $question = "$num1 $num2";
-    $largerNum = 0;
-    $smallNum = 0;
     $answer = 1;
-    switch ($num1 >= $num2) {
-        case true:
-            $largerNum = $num1;
-            $smallNum = $num2;
-            break;
-        case false:
-            $largerNum = $num2;
-            $smallNum = $num1;
-            break;
+    if ($num1 >= $num2) {
+        $largerNum = $num1;
+        $smallNum = $num2;
+    } else {
+        $largerNum = $num2;
+        $smallNum = $num1;
     }
     for ($i = $smallNum; $i > 0; $i--) {
         $firstCondition = (bool)($largerNum % $i);
@@ -48,5 +49,5 @@ function dataRounds(): array
             break;
         }
     }
-    return ['question' => $question, 'answer' => (string)$answer];
+    return [$question, (string)$answer];
 }

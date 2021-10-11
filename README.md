@@ -2,19 +2,18 @@
 [![Actions Status](https://github.com/AslanAV/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AslanAV/php-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
+
 ### игра brain-even
-[![asciicast](https://asciinema.org/a/zckOK1vrzY913rYLQlMC6M60j.png)](https://asciinema.org/a/zckOK1vrzY913rYLQlMC6M60j)
-[asciinema Brain-even](https://asciinema.org/a/zckOK1vrzY913rYLQlMC6M60j)
+[![asciicast](https://asciinema.org/a/eCAiGdJixUB5zgKpx079cKkAQ.png)](https://asciinema.org/a/eCAiGdJixUB5zgKpx079cKkAQ)
 
 ### игра brain-calc
-[asciinema brain-calc](https://asciinema.org/a/NWb1FPoWIN7LBEFFHED185eij)
+[![asciicast](https://asciinema.org/a/NWb1FPoWIN7LBEFFHED185eij.png)](https://asciinema.org/a/NWb1FPoWIN7LBEFFHED185eij)
 
 ### игра brain-gcd
-[asciinema brain-calc](https://asciinema.org/a/vlQa2bkyVXnnlaguC2CGaTti9)
+[![asciicast](https://asciinema.org/a/vlQa2bkyVXnnlaguC2CGaTti9.png)](https://asciinema.org/a/vlQa2bkyVXnnlaguC2CGaTti9)
 
 ### игра brain-progression
-[asciinema brain-calc](https://asciinema.org/a/iKr8nY6V4sJVPc0mG5orcuKRB)
+[![asciicast](https://asciinema.org/a/iKr8nY6V4sJVPc0mG5orcuKRB.png)](https://asciinema.org/a/iKr8nY6V4sJVPc0mG5orcuKRB)
 
 ### игра brain-prime
-[asciinema brain-calc](https://asciinema.org/a/IxLjIQ7jBriiBRd4QpmyYyMRp)
+[![asciicast](https://asciinema.org/a/IxLjIQ7jBriiBRd4QpmyYyMRp.png)](https://asciinema.org/a/IxLjIQ7jBriiBRd4QpmyYyMRp)

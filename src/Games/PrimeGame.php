@@ -1,16 +1,16 @@
 <?php
 
-namespace Brain\Games\primeGame;
+namespace Brain\Games\PrimeGame;
 
 use function Brain\Engine\engineGame;
+use const Brain\Engine\ROUNDS_COUNT;
 
 function prime(): void
 {
-    $rounds = 3;
+    $rounds = ROUNDS_COUNT;
     $startMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
-    engineGame($gameData);
+    engineGame($gameData, $startMessage);
 }
 
 function generateRound(int $rounds): array
@@ -31,10 +31,6 @@ function dataRounds(): array
             $count++;
         }
     }
-    if ($count === 1) {
-        $answer = 'yes';
-    } else {
-        $answer = 'no';
-    }
+    $answer = $count === 1 ? 'yes' : 'no';
     return ['question' => $question, 'answer' => $answer];
 }

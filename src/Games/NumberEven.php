@@ -1,16 +1,16 @@
 <?php
 
-namespace Brain\Games\numberIsEven;
+namespace Brain\Games\NumberEven;
 
 use function Brain\Engine\engineGame;
+use const Brain\Engine\ROUNDS_COUNT;
 
-function isEven(): void
+function gamesEven(): void
 {
-    $rounds = 3;
+    $rounds = ROUNDS_COUNT;
     $startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
     $gameData = generateRound($rounds);
-    $gameData = ['startMessage' => $startMessage, 'countGame' => $rounds] + $gameData;
-    engineGame($gameData);
+    engineGame($gameData, $startMessage);
 }
 
 function generateRound(int $rounds): array
@@ -25,15 +25,7 @@ function generateRound(int $rounds): array
 function dataRounds(): array
 {
     $question = random_int(0, 100);
-    $answer = '';
     $condition = !(bool)($question % 2);
-    switch ($condition) {
-        case true:
-            $answer = 'yes';
-            break;
-        case false:
-            $answer = 'no';
-            break;
-    }
+    $answer = $condition ? 'yes' : 'no';
     return ['question' => $question, 'answer' => $answer];
 }

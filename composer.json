@@ -5,12 +5,12 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/Games/Cli.php",
-            "src/Games/numberIsEven.php",
-            "src/Games/calcGame.php",
-            "src/Games/gcdGame.php",
-            "src/Games/progressionGame.php",
-            "src/Games/primeGame.php",
+          "src/Cli.php",
+            "src/Games/NumberEven.php",
+            "src/Games/CalcGame.php",
+            "src/Games/GcdGame.php",
+            "src/Games/ProgressionGame.php",
+            "src/Games/PrimeGame.php",
             "src/Engine.php"
         ]
     },
