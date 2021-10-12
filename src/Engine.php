@@ -9,7 +9,6 @@ const ROUNDS_COUNT = 3;
 function engineGame(array $gameData, string $startMessage): void
 {
     line("Welcome to the Brain Game!");
-//    $name = line("May I have your name?");
     $name = prompt("May I have your name?");
     line("Hello, %s!", $name);
     line($startMessage);
