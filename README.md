@@ -1,7 +1,24 @@
+# php-project-lvl1
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AslanAV/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AslanAV/php-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/AslanAV/php-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/AslanAV/php-project-lvl1/test_coverage)
+
+## Setup
+
+```sh
+$ git clone https://github.com/AslanAV/php-project-lvl1
+
+$ make install
+```
+
+## Run lint
+
+```sh
+$ make lint
+```
 
 ### игра brain-even
 [![asciicast](https://asciinema.org/a/eCAiGdJixUB5zgKpx079cKkAQ.png)](https://asciinema.org/a/eCAiGdJixUB5zgKpx079cKkAQ)
