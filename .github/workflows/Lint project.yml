@@ -1,4 +1,4 @@
-name: PHP CI 
+name: Lint project
 
 on: 
   - push
